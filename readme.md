@@ -10,16 +10,16 @@ Das Flashen kann mit den [ESP32 Flash Tool](https://www.espressif.com/en/support
 | Nr | Funktion | 
 |----|-----------|  
 |1.| SML-Parser integriert für alle Einheitenzähler, die den Standard unterstützen (über IR-Schnittstelle)  |
-|2. |Unterstützung für Einrichtungszähler  |
-|3. |Anzeige von  Wirkverbrauch und Einspeisung (aktuell, heute, gestern) und Gesamtverbrauch  |
+|2. |Unterstützung für Einrichtungs- und Zweirichtungszähler  |
+|3. |Anzeige von  Wirkverbrauch und Einspeisung (aktuell, heute, gestern) und Gesamtverbrauch und Gesamteinspeisung  |
 |4. |Anzeige über LCD   |
-|6. |Webserver für http-Zugriff  |
-|7. |RS485 Schnittstelle und Ansteuerung für Soyosource 1200 Wechselrichter   |
+|6. |Webserver für http-Zugriff  http://esp32-PV-Anlage|
+|7. |RS485 Schnittstelle und Ansteuerung für Soyosource 1000/1200 Wechselrichter   |
 |8. |Batterie-Leer-Erkennung durch Prüfung der Einspeisung alle 10 Minuten  |
 |9. |Nulleinspeisung durch 3-Step Lastreduzierungs-Algorithmus, Einspeisepunkt ist beliebig  |
 |10.| Automatischer Accesspoint zum Anmelden im Heimnetz, wenn hinterlegtes Netz nicht gefunden  |
 |11.| Datum und Zeit automatisch vom Netz (NTP)  |
-|12. |Sommer- und Winterzeitumstellung (hoffentlich)  |
+|12. |Automatische Sommer- und Winterzeitumstellung  |
 |13. |Data-Logging für Wirkverbrauch und Einspeisung und Zählerstand stündlich mittels SPIFFS (Flash), aktuelles Jahr und Vorjahr  |
 |14. |Konfigurationsmenü zum Einstellen des Regelverhaltens und der Anzahl der Wechselrichter (bleibt erhalten durch EEPROM)  |
 |15. |Erkennung von Externem Zugriff und Deaktivierung der Konfigurationsmöglichkeit (nur von 192.168... aus)  |
@@ -28,7 +28,9 @@ Das Flashen kann mit den [ESP32 Flash Tool](https://www.espressif.com/en/support
 |18. |Automatisches Einwählen ins Netz bei Neustart  |
 |19. |"Notlauf" nach Neustart ohne Netzverbindung und Uhrzeit nach 1 Minute ohne Verbindungserfolg, um Steuerung zu gewährleisten     |
 |20. | Einstellbare Baudrate für Einheitenzähler     |
-  |21. | Unterstützung Zweirichtungszähler     |
+|21. | Unterstützung Zweirichtungszähler     |
+|22. | Fixwert für Wechselrichterleistung, hilft bei Laborinbetriebnahme     |
+  
   
 </details>
   
